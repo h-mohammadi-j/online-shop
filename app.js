@@ -7,7 +7,7 @@ function app() {
         `
         <div class="w-full flex flex-col justify-center ">
             <div>${menu()}</div>
-            <div id="products" class="wi-full bg-gray-300 flex justify-center gap-4 flex-wrap "></div>
+            <div id="products" class="wi-full flex justify-center gap-8 flex-wrap py-8 "></div>
             <div>${footer()}</div>
             
         </div>

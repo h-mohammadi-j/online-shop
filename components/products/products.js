@@ -10,8 +10,8 @@ const products = async () => {
     data.forEach((card) => {
       products.innerHTML += `
                 
-                    <div class="w-[250px] h-[500px] rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.5)]">
-                    <img class="w-full" src=${card.image} />
+                    <div class="w-[250px] h-[500px] rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.5)] overflow-hidden p-2.5 text-center">
+                    <img class="size-[250px] object-cover object-center rounded-sm " src=${card.image} />
                         <h2>${card.title}</h2>
                         <p>${card.description}</p>
                         <p>${card.price}</p>
