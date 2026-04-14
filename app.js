@@ -6,9 +6,14 @@ import products from "./components/products/products.js";
 function app() {
   return `
         <div class="w-full flex flex-col justify-center ">
+<<<<<<< HEAD
             <div class="w-full">${menu()}</div>
             <div class="w-full sticky top-0 shadow-[0_0_10px_rgba(0,0,0,0.5)]">${filter()}</div>
             <div id="products" class="wi-full  p-8 flex justify-center gap-8 flex-wrap py-8 "></div>
+=======
+            <div>${menu()}</div>
+            <div id="products" class="wi-full flex justify-center gap-8 flex-wrap py-8 "></div>
+>>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
             <div>${footer()}</div>
             
         </div>
