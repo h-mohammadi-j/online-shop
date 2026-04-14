@@ -1,1 +1,73 @@
 @import "tailwindcss";
+
+
+.active-burger {
+    #upLine {
+        transform: rotateZ(45deg);
+        width: 26px;
+        transform-origin: 0 50%;
+        background: orangered;
+    }
+    #midLine {
+        opacity: 0;
+        transform: translateX(-100%);
+        background: orangered;
+    }
+    #downLine {
+        transform: rotateZ(-45deg);
+        width: 26px;
+        transform-origin: 0 50%;
+        background: orangered;
+    }
+
+}
+
+.navActive {
+    z-index: -1;
+    li:nth-of-type(1){
+        width: 100%;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(58px) scaleX(1);
+        transition-delay: 0.2s;
+        z-index: 10;
+    }
+    li:nth-of-type(2){
+        width: 100%;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(calc(56.8px + 58px)) scaleX(1);
+        transition-delay: 0.3s;
+        z-index: 9;
+    }
+    li:nth-of-type(3){
+        width: 100%;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(calc(56.8px + 58px + 56.8px)) scaleX(1);
+        transition-delay: 0.4s;
+        z-index: 8;
+    }
+    li:nth-of-type(4){
+        width: 100%;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(calc(56.8px + 58px + 56.8px + 56.8px)) scaleX(1);
+        transition-delay: 0.5s;
+        z-index: 7;
+    }
+}
+
+.successBtn {
+    @apply bg-blue-400 text-white py-2 px-4 rounded-md hover:bg-blue-500 active:bg-blue-600 transition-all duration-300
+}
+.warningBtn {
+    @apply bg-red-400 text-white py-2 px-4 rounded-md hover:bg-red-500 active:bg-red-600 transition-all duration-300
+}
+.infoBtn {
+    @apply bg-green-400 text-white py-2 px-4 rounded-md hover:bg-green-500 active:bg-green-600 transition-all duration-300
+}

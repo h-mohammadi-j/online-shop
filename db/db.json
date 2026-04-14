@@ -1,233 +1,385 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "name": "John Doe",
-      "email": "2x3lN@example.com",
-      "password": "password123"
-    },
-    {
-      "id": "c113"
-    },
-    {
-      "id": "4919"
-    },
-    {
-      "id": "0de6"
-    },
-    {
-      "id": "f073"
-    },
-    {
-      "id": "551d"
-    },
-    {
-      "id": "0933"
-    },
-    {
-      "id": "97e4"
-    },
-    {
-      "id": "9402"
-    },
-    {
-      "id": "0a58"
-    },
-    {
-      "id": "4632"
-    },
-    {
-      "id": "5ee0"
-    },
-    {
-      "id": "1542"
-    },
-    {
-      "id": "40b0"
-    },
-    {
-      "id": "8cc0"
-    },
-    {
-      "id": "99ab"
-    },
-    {
-      "id": "608b"
-    },
-    {
-      "id": "8eda"
-    },
-    {
-      "id": "b34a"
-    },
-    {
-      "id": "c146"
-    },
-    {
-      "id": "09b0"
-    },
-    {
-      "id": "7ad7"
-    },
-    {
-      "id": "10b8"
-    },
-    {
-      "id": "6ae4"
-    },
-    {
-      "id": "78fd"
-    },
-    {
-      "id": "e0d2"
-    },
-    {
-      "id": "b34c"
-    },
-    {
-      "id": "42ef"
-    },
-    {
-      "id": "b1cf"
-    },
-    {
-      "id": "82db"
-    },
-    {
-      "id": "ec8d"
-    },
-    {
-      "id": "568a"
-    },
-    {
-      "id": "793e"
-    },
-    {
-      "id": "f64d"
-    },
-    {
-      "id": "256a"
-    },
-    {
-      "id": "3f9d"
-    },
-    {
-      "id": "a086"
-    },
-    {
-      "id": "8fd9"
-    },
-    {
-      "id": "24d0"
-    },
-    {
-      "id": "29b4"
-    },
-    {
-      "id": "23df"
-    },
-    {
-      "id": "122c"
-    },
-    {
-      "id": "e06d"
-    },
-    {
-      "id": "6353"
-    },
-    {
-      "id": "95c0"
-    },
-    {
-      "id": "fb68"
-    },
-    {
-      "id": "a561"
-    },
-    {
-      "id": "a9e0"
-    },
-    {
-      "id": "4f19"
-    },
-    {
-      "id": "09e0"
-    },
-    {
-      "id": "263c"
-    },
-    {
-      "id": "b994"
-    },
-    {
-      "id": "44de"
-    },
-    {
-      "id": "a01f"
-    },
-    {
-      "id": "377e"
-    },
-    {
-      "id": "5862"
-    },
-    {
-      "id": "784a"
-    },
-    {
-      "id": "fefd"
-    },
-    {
-      "id": "815f"
-    },
-    {
-      "id": "c3c6"
-    },
-    {
-      "id": "33c7"
-    },
-    {
-      "id": "2a08"
-    },
-    {
-      "id": "f878"
-    },
-    {
-      "id": "eabf"
-    },
-    {
-      "id": "d45e"
-    },
-    {
-      "id": "25b1"
-    },
-    {
-      "id": "5e76"
-    },
-    {
-      "id": "2019"
-    },
-    {
-      "id": "9566"
-    },
-    {
-      "id": "ff5f"
-    },
-    {
-      "id": "a082"
-    },
-    {
-      "id": "6a52"
-    },
-    {
-      "id": "4c01"
-    },
-    {
-      "id": "2709"
-    },
-    {
-      "id": "508d"
+  "products": [
+    {
+      "id": 1,
+      "title": "Men's Casual T-Shirt",
+      "category": "men",
+      "image": "https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg",
+      "description": "Comfortable cotton t-shirt for everyday wear.",
+      "price": 20,
+      "rating": 4.2,
+      "stock": 50,
+      "discount": 10,
+      "createdAt": "2026-01-01"
+    },
+    {
+      "id": 2,
+      "title": "Women's Summer Dress",
+      "category": "women",
+      "image": "https://images.pexels.com/photos/994517/pexels-photo-994517.jpeg",
+      "description": "Lightweight floral dress.",
+      "price": 35,
+      "rating": 4.5,
+      "stock": 30,
+      "discount": 15,
+      "createdAt": "2026-01-02"
+    },
+    {
+      "id": 3,
+      "title": "Running Shoes",
+      "category": "sports",
+      "image": "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
+      "description": "Durable running shoes.",
+      "price": 60,
+      "rating": 4.3,
+      "stock": 40,
+      "discount": 5,
+      "createdAt": "2026-01-03"
+    },
+
+    {
+      "id": 4,
+      "title": "Leather Handbag",
+      "category": "accessories",
+      "image": "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg",
+      "description": "Stylish leather handbag.",
+      "price": 80,
+      "rating": 4.6,
+      "stock": 20,
+      "discount": 20,
+      "createdAt": "2026-01-04"
+    },
+    {
+      "id": 5,
+      "title": "Wireless Headphones",
+      "category": "electronics",
+      "image": "https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg",
+      "description": "Noise cancelling headphones.",
+      "price": 120,
+      "rating": 4.7,
+      "stock": 25,
+      "discount": 10,
+      "createdAt": "2026-01-05"
+    },
+
+    {
+      "id": 6,
+      "title": "Smart Watch",
+      "category": "electronics",
+      "image": "https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg",
+      "description": "Modern smartwatch with health tracking.",
+      "price": 150,
+      "rating": 4.4,
+      "stock": 35,
+      "discount": 12,
+      "createdAt": "2026-01-06"
+    },
+    {
+      "id": 7,
+      "title": "Denim Jacket",
+      "category": "men",
+      "image": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
+      "description": "Classic denim jacket.",
+      "price": 70,
+      "rating": 4.1,
+      "stock": 28,
+      "discount": 8,
+      "createdAt": "2026-01-07"
+    },
+    {
+      "id": 8,
+      "title": "High Heels",
+      "category": "women",
+      "image": "https://images.pexels.com/photos/19090/pexels-photo.jpg",
+      "description": "Elegant high heels.",
+      "price": 55,
+      "rating": 4.3,
+      "stock": 18,
+      "discount": 15,
+      "createdAt": "2026-01-08"
+    },
+
+    {
+      "id": 9,
+      "title": "Backpack",
+      "category": "bags",
+      "image": "https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg",
+      "description": "Durable travel backpack.",
+      "price": 45,
+      "rating": 4.5,
+      "stock": 60,
+      "discount": 5,
+      "createdAt": "2026-01-09"
+    },
+    {
+      "id": 10,
+      "title": "Gaming Mouse",
+      "category": "electronics",
+      "image": "https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg",
+      "description": "High precision gaming mouse.",
+      "price": 35,
+      "rating": 4.6,
+      "stock": 45,
+      "discount": 7,
+      "createdAt": "2026-01-10"
+    },
+
+    {
+      "id": 11,
+      "title": "Keyboard Mechanical",
+      "category": "electronics",
+      "image": "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg",
+      "description": "RGB mechanical keyboard.",
+      "price": 90,
+      "rating": 4.7,
+      "stock": 32,
+      "discount": 10,
+      "createdAt": "2026-01-11"
+    },
+    {
+      "id": 12,
+      "title": "Men's Hoodie",
+      "category": "men",
+      "image": "https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg",
+      "description": "Warm hoodie.",
+      "price": 40,
+      "rating": 4.2,
+      "stock": 38,
+      "discount": 6,
+      "createdAt": "2026-01-12"
+    },
+
+    {
+      "id": 13,
+      "title": "Women's Jacket",
+      "category": "women",
+      "image": "https://images.pexels.com/photos/2584269/pexels-photo-2584269.jpeg",
+      "description": "Stylish winter jacket.",
+      "price": 85,
+      "rating": 4.5,
+      "stock": 22,
+      "discount": 18,
+      "createdAt": "2026-01-13"
+    },
+    {
+      "id": 14,
+      "title": "Sunglasses",
+      "category": "accessories",
+      "image": "https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg",
+      "description": "UV protection sunglasses.",
+      "price": 25,
+      "rating": 4.1,
+      "stock": 70,
+      "discount": 10,
+      "createdAt": "2026-01-14"
+    },
+
+    {
+      "id": 15,
+      "title": "Laptop Stand",
+      "category": "electronics",
+      "image": "https://images.pexels.com/photos/4050291/pexels-photo-4050291.jpeg",
+      "description": "Ergonomic stand.",
+      "price": 30,
+      "rating": 4.3,
+      "stock": 40,
+      "discount": 5,
+      "createdAt": "2026-01-15"
+    },
+
+    {
+      "id": 16,
+      "title": "Water Bottle",
+      "category": "sports",
+      "image": "https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg",
+      "description": "Reusable bottle.",
+      "price": 15,
+      "rating": 4.0,
+      "stock": 100,
+      "discount": 3,
+      "createdAt": "2026-01-16"
+    },
+
+    {
+      "id": 17,
+      "title": "Yoga Mat",
+      "category": "sports",
+      "image": "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
+      "description": "Non-slip yoga mat.",
+      "price": 25,
+      "rating": 4.4,
+      "stock": 55,
+      "discount": 7,
+      "createdAt": "2026-01-17"
+    },
+
+    {
+      "id": 18,
+      "title": "Bluetooth Speaker",
+      "category": "electronics",
+      "image": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg",
+      "description": "Portable speaker.",
+      "price": 50,
+      "rating": 4.6,
+      "stock": 33,
+      "discount": 9,
+      "createdAt": "2026-01-18"
+    },
+
+    {
+      "id": 19,
+      "title": "Cap",
+      "category": "men",
+      "image": "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg",
+      "description": "Casual cap.",
+      "price": 18,
+      "rating": 4.1,
+      "stock": 60,
+      "discount": 5,
+      "createdAt": "2026-01-19"
+    },
+
+    {
+      "id": 20,
+      "title": "Scarf",
+      "category": "women",
+      "image": "https://images.pexels.com/photos/374876/pexels-photo-374876.jpeg",
+      "description": "Warm scarf.",
+      "price": 22,
+      "rating": 4.2,
+      "stock": 48,
+      "discount": 6,
+      "createdAt": "2026-01-20"
+    },
+
+    {
+      "id": 21,
+      "title": "Office Chair",
+      "category": "furniture",
+      "image": "https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg",
+      "description": "Comfortable chair.",
+      "price": 140,
+      "rating": 4.5,
+      "stock": 15,
+      "discount": 12,
+      "createdAt": "2026-01-21"
+    },
+
+    {
+      "id": 22,
+      "title": "Desk Lamp",
+      "category": "furniture",
+      "image": "https://images.pexels.com/photos/112811/pexels-photo-112811.jpeg",
+      "description": "LED lamp.",
+      "price": 28,
+      "rating": 4.3,
+      "stock": 34,
+      "discount": 8,
+      "createdAt": "2026-01-22"
+    },
+
+    {
+      "id": 23,
+      "title": "Notebook",
+      "category": "stationery",
+      "image": "https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg",
+      "description": "Paper notebook.",
+      "price": 10,
+      "rating": 4.0,
+      "stock": 120,
+      "discount": 2,
+      "createdAt": "2026-01-23"
+    },
+
+    {
+      "id": 24,
+      "title": "Pen Set",
+      "category": "stationery",
+      "image": "https://images.pexels.com/photos/159751/book-binding-book-books-business-159751.jpeg",
+      "description": "Smooth writing pens.",
+      "price": 12,
+      "rating": 4.1,
+      "stock": 90,
+      "discount": 3,
+      "createdAt": "2026-01-24"
+    },
+
+    {
+      "id": 25,
+      "title": "Travel Bag",
+      "category": "bags",
+      "image": "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg",
+      "description": "Large travel bag.",
+      "price": 75,
+      "rating": 4.4,
+      "stock": 26,
+      "discount": 11,
+      "createdAt": "2026-01-25"
+    },
+
+    {
+      "id": 26,
+      "title": "Sneakers",
+      "category": "men",
+      "image": "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
+      "description": "Casual sneakers.",
+      "price": 65,
+      "rating": 4.5,
+      "stock": 37,
+      "discount": 9,
+      "createdAt": "2026-01-26"
+    },
+
+    {
+      "id": 27,
+      "title": "Makeup Kit",
+      "category": "women",
+      "image": "https://images.pexels.com/photos/3373726/pexels-photo-3373726.jpeg",
+      "description": "Complete makeup set.",
+      "price": 95,
+      "rating": 4.6,
+      "stock": 19,
+      "discount": 14,
+      "createdAt": "2026-01-27"
+    },
+
+    {
+      "id": 28,
+      "title": "Tablet",
+      "category": "electronics",
+      "image": "https://images.pexels.com/photos/5082566/pexels-photo-5082566.jpeg",
+      "description": "High performance tablet.",
+      "price": 220,
+      "rating": 4.7,
+      "stock": 14,
+      "discount": 13,
+      "createdAt": "2026-01-28"
+    },
+
+    {
+      "id": 29,
+      "title": "Monitor",
+      "category": "electronics",
+      "image": "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg",
+      "description": "Full HD monitor.",
+      "price": 180,
+      "rating": 4.5,
+      "stock": 21,
+      "discount": 10,
+      "createdAt": "2026-01-29"
+    },
+
+    {
+      "id": 30,
+      "title": "Camera",
+      "category": "electronics",
+      "image": "https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg",
+      "description": "Professional camera.",
+      "price": 500,
+      "rating": 4.8,
+      "stock": 10,
+      "discount": 15,
+      "createdAt": "2026-01-30"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

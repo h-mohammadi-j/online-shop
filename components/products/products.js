@@ -1,5 +1,8 @@
 const products = async () => {
   try {
+    // let res = await fetch(
+    //   "http://localhost:3000/products",
+    // );
     let res = await fetch(
       "https://fakestoreapiserver.reactbd.org/api/products",
     );
@@ -10,8 +13,8 @@ const products = async () => {
     data.forEach((card) => {
       products.innerHTML += `
                 
-                    <div class="w-[250px] h-[500px] rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.5)]">
-                    <img class="w-full" src=${card.image} />
+                    <div class=" w-full sm:w-[250px] h-[500px] p-4 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.5)] overflow-hidden p-2.5 text-center">
+                    <img class="w-full h-[250px] object-cover object-center rounded-sm " src=${card.image} />
                         <h2>${card.title}</h2>
                         <p>${card.description}</p>
                         <p>${card.price}</p>
