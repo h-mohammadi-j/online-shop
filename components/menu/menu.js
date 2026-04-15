@@ -13,7 +13,7 @@
                 <li class="bg-gray-800 py-4 md;py-0 md:opacity-100 md:w-fit md:static md:visible md:block origin-center border-cyan-400 border-t-[1px] border-b-[1px] md:border-0  absolute w-0  opacity-0  left-0 transform transition-all duration-300 invisible cursor-pointer">Contact</li>
             </ul>
             <div class="flex gap-4 z-50">
-                <a class="cursor-pointer border-[1px] bg-cyan-400 text-black border-cyan-400 py-1.5 px-4 rounded-md hover:bg-transparent hover:text-white transition-all duration-300" href="../../components/signIn/signIn.html">Sign In</a>
+                <a class="cursor-pointer border-[1px] bg-cyan-400 text-black border-cyan-400 py-1.5 px-4 rounded-md hover:bg-transparent hover:text-white transition-all duration-300" href="../../components/new-login/newLogin.html">Sign In</a>
 
                 <a class="cursor-pointer border-[1px] hover:bg-cyan-400 hover:text-black border-cyan-400 py-1.5 px-4 rounded-md transition-all duration-300" href="../../components/signUp/signUp.html">Sign Up</a>
             </div>
