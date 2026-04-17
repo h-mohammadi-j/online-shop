@@ -9,10 +9,7 @@ function app() {
 
             <div class="w-full">${menu()}</div>
             <div class="w-full sticky top-0 shadow-[0_0_10px_rgba(0,0,0,0.5)]">${filter()}</div>
-            <div id="products" class="wi-full  p-8 flex justify-center gap-8 flex-wrap py-8 "></div>
-
-            <div id="products" class="wi-full flex justify-center gap-8 flex-wrap py-8 "></div>
-
+            <div id="products" class="w-full p-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
             <div>${footer()}</div>
             
         </div>

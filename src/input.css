@@ -73,7 +73,7 @@
 /* New Login Pages */
 
 /* .login-body { */
-  /* display: flex;
+/* display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -82,7 +82,7 @@
   position: relative;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 
-  /* @apply flex items-center justify-center min-h-screen bg-linear-[to bottom,#8b4513,#d2691e,#ffa500,#f4a460] overflow-hidden relative font-[Segoe UI,Tahoma,Geneva,Verdana,sans-serif]; */
+/* @apply flex items-center justify-center min-h-screen bg-linear-[to bottom,#8b4513,#d2691e,#ffa500,#f4a460] overflow-hidden relative font-[Segoe UI,Tahoma,Geneva,Verdana,sans-serif]; */
 /* } */
 
 /* .login-container {
@@ -132,7 +132,7 @@
   @apply w-full grid grid-cols-2 gap-1;
 } */
 
-.input-group {
+/* .input-group {
   position: relative;
   margin-bottom: 30px;
 }
@@ -201,10 +201,10 @@
 
 .login-btn:hover {
   text-decoration: underline;
-}
+} */
 
 /* Background Elements */
-.tree {
+/* .tree {
   position: absolute;
   bottom: 0;
   z-index: 1;
@@ -371,10 +371,10 @@
   border-radius: 50% 0 50% 50%;
   opacity: 0.8;
   animation: fall linear infinite;
-}
+} */
 
 /* Animations */
-@keyframes sway {
+/* @keyframes sway {
   0%,
   100% {
     transform: rotate(0deg);
@@ -426,10 +426,10 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .login-form {
     width: 90%;
     padding: 30px 20px;
@@ -437,5 +437,104 @@
 
   .tree {
     transform: scale(0.8);
+  }
+} */
+
+.clip-path-style {
+  clip-path: polygon(
+    0% 100%,
+    10% 70%,
+    20% 80%,
+    30% 65%,
+    40% 75%,
+    50% 60%,
+    60% 70%,
+    70% 55%,
+    80% 65%,
+    90% 50%,
+    100% 60%,
+    100% 100%
+  );
+}
+
+.leaf {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  /* background: linear-gradient(45deg, #ff8c00, #ff4500, #8b4513); */
+  background-image: url("../assets/1.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50% 0 50% 50%;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+/* Animations */
+.animation-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+.animation-sway {
+  animation: sway 8s infinite ease-in-out;
+}
+
+.animation-chairMove {
+  animation: chairMove 15s infinite ease-in-out;
+}
+
+.animation-fall {
+}
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes chairMove {
+  0%,
+  100% {
+    transform: rotate(-10deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(-8deg) translateY(-5px);
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

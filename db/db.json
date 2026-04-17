@@ -4,11 +4,7 @@
       "id": 1,
       "title": "Men's Casual T-Shirt",
       "category": "men",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg",
-=======
-      "image": "/images/1.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/1.jpeg",
       "description": "Comfortable cotton t-shirt for everyday wear.",
       "price": 20,
       "rating": 4.2,
@@ -20,11 +16,7 @@
       "id": 2,
       "title": "Women's Summer Dress",
       "category": "women",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/994517/pexels-photo-994517.jpeg",
-=======
-      "image": "/images/2.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/2.jpeg",
       "description": "Lightweight floral dress.",
       "price": 35,
       "rating": 4.5,
@@ -36,11 +28,7 @@
       "id": 3,
       "title": "Running Shoes",
       "category": "sports",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
-=======
-      "image": "/images/3.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/3.jpeg",
       "description": "Durable running shoes.",
       "price": 60,
       "rating": 4.3,
@@ -53,11 +41,7 @@
       "id": 4,
       "title": "Leather Handbag",
       "category": "accessories",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg",
-=======
-      "image": "/images/4.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/4.jpeg",
       "description": "Stylish leather handbag.",
       "price": 80,
       "rating": 4.6,
@@ -69,11 +53,7 @@
       "id": 5,
       "title": "Wireless Headphones",
       "category": "electronics",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg",
-=======
-      "image": "/images/5.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/5.jpeg",
       "description": "Noise cancelling headphones.",
       "price": 120,
       "rating": 4.7,
@@ -86,11 +66,7 @@
       "id": 6,
       "title": "Smart Watch",
       "category": "electronics",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg",
-=======
-      "image": "/images/6.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/6.jpeg",
       "description": "Modern smartwatch with health tracking.",
       "price": 150,
       "rating": 4.4,
@@ -102,11 +78,7 @@
       "id": 7,
       "title": "Denim Jacket",
       "category": "men",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
-=======
-      "image": "/images/7.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/7.jpeg",
       "description": "Classic denim jacket.",
       "price": 70,
       "rating": 4.1,
@@ -118,11 +90,7 @@
       "id": 8,
       "title": "High Heels",
       "category": "women",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/19090/pexels-photo.jpg",
-=======
-      "image": "/images/8.jpg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/8.jpg",
       "description": "Elegant high heels.",
       "price": 55,
       "rating": 4.3,
@@ -135,11 +103,7 @@
       "id": 9,
       "title": "Backpack",
       "category": "bags",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg",
-=======
-      "image": "/images/9.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/9.jpeg",
       "description": "Durable travel backpack.",
       "price": 45,
       "rating": 4.5,
@@ -151,11 +115,7 @@
       "id": 10,
       "title": "Gaming Mouse",
       "category": "electronics",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg",
-=======
-      "image": "/images/10.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/10.jpeg",
       "description": "High precision gaming mouse.",
       "price": 35,
       "rating": 4.6,
@@ -168,11 +128,7 @@
       "id": 11,
       "title": "Keyboard Mechanical",
       "category": "electronics",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg",
-=======
-      "image": "/images/11.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/11.jpeg",
       "description": "RGB mechanical keyboard.",
       "price": 90,
       "rating": 4.7,
@@ -184,11 +140,7 @@
       "id": 12,
       "title": "Men's Hoodie",
       "category": "men",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg",
-=======
-      "image": "/images/12.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/12.jpeg",
       "description": "Warm hoodie.",
       "price": 40,
       "rating": 4.2,
@@ -201,11 +153,7 @@
       "id": 13,
       "title": "Women's Jacket",
       "category": "women",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/2584269/pexels-photo-2584269.jpeg",
-=======
-      "image": "/images/13.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/13.jpeg",
       "description": "Stylish winter jacket.",
       "price": 85,
       "rating": 4.5,
@@ -217,11 +165,7 @@
       "id": 14,
       "title": "Sunglasses",
       "category": "accessories",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg",
-=======
-      "image": "/images/14.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/14.jpeg",
       "description": "UV protection sunglasses.",
       "price": 25,
       "rating": 4.1,
@@ -234,11 +178,7 @@
       "id": 15,
       "title": "Laptop Stand",
       "category": "electronics",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/4050291/pexels-photo-4050291.jpeg",
-=======
-      "image": "/images/15.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/15.jpeg",
       "description": "Ergonomic stand.",
       "price": 30,
       "rating": 4.3,
@@ -251,11 +191,7 @@
       "id": 16,
       "title": "Water Bottle",
       "category": "sports",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg",
-=======
-      "image": "/images/16.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/16.jpeg",
       "description": "Reusable bottle.",
       "price": 15,
       "rating": 4.0,
@@ -268,11 +204,7 @@
       "id": 17,
       "title": "Yoga Mat",
       "category": "sports",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
-=======
-      "image": "/images/17.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/17.jpeg",
       "description": "Non-slip yoga mat.",
       "price": 25,
       "rating": 4.4,
@@ -285,11 +217,7 @@
       "id": 18,
       "title": "Bluetooth Speaker",
       "category": "electronics",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg",
-=======
-      "image": "/images/18.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/18.jpeg",
       "description": "Portable speaker.",
       "price": 50,
       "rating": 4.6,
@@ -302,11 +230,7 @@
       "id": 19,
       "title": "Cap",
       "category": "men",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg",
-=======
-      "image": "/images/19.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/19.jpeg",
       "description": "Casual cap.",
       "price": 18,
       "rating": 4.1,
@@ -319,11 +243,7 @@
       "id": 20,
       "title": "Scarf",
       "category": "women",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/374876/pexels-photo-374876.jpeg",
-=======
-      "image": "/images/20.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/20.jpeg",
       "description": "Warm scarf.",
       "price": 22,
       "rating": 4.2,
@@ -336,11 +256,7 @@
       "id": 21,
       "title": "Office Chair",
       "category": "furniture",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg",
-=======
-      "image": "/images/21.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/21.jpeg",
       "description": "Comfortable chair.",
       "price": 140,
       "rating": 4.5,
@@ -353,11 +269,7 @@
       "id": 22,
       "title": "Desk Lamp",
       "category": "furniture",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/112811/pexels-photo-112811.jpeg",
-=======
-      "image": "/images/22.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/22.jpeg",
       "description": "LED lamp.",
       "price": 28,
       "rating": 4.3,
@@ -370,11 +282,7 @@
       "id": 23,
       "title": "Notebook",
       "category": "stationery",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg",
-=======
-      "image": "/images/23.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/23.jpeg",
       "description": "Paper notebook.",
       "price": 10,
       "rating": 4.0,
@@ -387,11 +295,7 @@
       "id": 24,
       "title": "Pen Set",
       "category": "stationery",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/159751/book-binding-book-books-business-159751.jpeg",
-=======
-      "image": "/images/24.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/24.jpeg",
       "description": "Smooth writing pens.",
       "price": 12,
       "rating": 4.1,
@@ -404,11 +308,7 @@
       "id": 25,
       "title": "Travel Bag",
       "category": "bags",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg",
-=======
-      "image": "/images/25.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/25.jpeg",
       "description": "Large travel bag.",
       "price": 75,
       "rating": 4.4,
@@ -421,11 +321,7 @@
       "id": 26,
       "title": "Sneakers",
       "category": "men",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
-=======
-      "image": "/images/26.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/26.jpeg",
       "description": "Casual sneakers.",
       "price": 65,
       "rating": 4.5,
@@ -438,11 +334,7 @@
       "id": 27,
       "title": "Makeup Kit",
       "category": "women",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/3373726/pexels-photo-3373726.jpeg",
-=======
-      "image": "/images/27.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/27.jpeg",
       "description": "Complete makeup set.",
       "price": 95,
       "rating": 4.6,
@@ -455,11 +347,7 @@
       "id": 28,
       "title": "Tablet",
       "category": "electronics",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/5082566/pexels-photo-5082566.jpeg",
-=======
-      "image": "/images/28.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/28.jpeg",
       "description": "High performance tablet.",
       "price": 220,
       "rating": 4.7,
@@ -472,11 +360,7 @@
       "id": 29,
       "title": "Monitor",
       "category": "electronics",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg",
-=======
-      "image": "/images/29.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/29.jpeg",
       "description": "Full HD monitor.",
       "price": 180,
       "rating": 4.5,
@@ -489,11 +373,7 @@
       "id": 30,
       "title": "Camera",
       "category": "electronics",
-<<<<<<< HEAD
-      "image": "https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg",
-=======
-      "image": "/images/30.jpeg",
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
+      "image": "db/assets/30.jpeg",
       "description": "Professional camera.",
       "price": 500,
       "rating": 4.8,
@@ -502,8 +382,4 @@
       "createdAt": "2026-01-30"
     }
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e85ee0c702a68b76f5f57237884263a0584dd4e0
