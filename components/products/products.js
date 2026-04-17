@@ -1,16 +1,13 @@
-import loading from "../loading/loading.js";
 const products = async () => {
   try {
-    // let res = await fetch(
-    //   "http://localhost:3000/products",
-    // );
     let res = await fetch(
-      "http://localhost:3000/products",
+      "https://fakestoreapiserver.reactbd.org/api/products",
     );
+    // let res = await fetch("http://localhost:3000/products");
     let result = await res.json();
-    let data = result;
-    let products = document.getElementById("products");
-
+    let data = result.data;
+    let products = document.getElementById("productsView");
+    
     data.forEach((card) => {
       products.innerHTML += `
       
@@ -27,6 +24,6 @@ const products = async () => {
   } catch (error) {
     console.error("fetch failed", error);
   }
+   
 };
-
-export default products;
+  export default products;
