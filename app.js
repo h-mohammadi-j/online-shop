@@ -11,7 +11,6 @@ function app() {
             <div class="w-full sticky top-0 shadow-[0_0_10px_rgba(0,0,0,0.5)]">${filter()}</div>
             <div id="products" class="wi-full  p-8 flex justify-center gap-8 flex-wrap py-8 "></div>
 
-            <div>${menu()}</div>
             <div id="products" class="wi-full flex justify-center gap-8 flex-wrap py-8 "></div>
 
             <div>${footer()}</div>
