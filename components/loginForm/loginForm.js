@@ -118,12 +118,16 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const username = this.querySelector('input[type="text"]').value;
   const password = this.querySelector('input[type="password"]').value;
 
+  const defaultUserName = "Hassan";
+  const defaultPassword = "Hassan123";
+
   // Simple validation
-  if (username && password) {
-    alert(`Welcome ${username}! Find Awesome projects on darkcssweb`);
+  if (username === defaultUserName && password === defaultPassword) {
+    // alert(`Welcome ${username}! Find Awesome projects on darkcssweb`);
+    window.location.href = "../dashbord/dashboard.html"
     // In a real application, you would send this data to a server
   } else {
-    alert("Please fill in all fields.");
+    alert("Username or password is incorrect.");
   }
 });
 

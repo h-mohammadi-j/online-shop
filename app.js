@@ -10,10 +10,10 @@ function app() {
     <div class="w-full flex flex-col justify-center ">
     
     <div class="w-full">${menu()}</div>
-    <div class="w-full sticky top-0 shadow-[0_0_10px_rgba(0,0,0,0.5)]">${filter()}</div>
+    <div class="w-full sticky top-0 z-[2] shadow-[0_0_10px_rgba(0,0,0,0.5)]">${filter()}</div>
     
     
-    <div id="productsView" class="bg-linear-to-tl from-amber-700 via-amber-600 via-amber-500 to-amber-400 bg-cover bg-no-repeat bg-conic-30w-full p-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 z-[-1]"></div>
+    <div id="productsView" class="bg-linear-to-tl from-amber-700 via-amber-600 via-amber-500 to-amber-400 bg-cover bg-no-repeat bg-conic-30w-full p-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 z-[1]"></div>
     
     <div>${footer()}</div>
     

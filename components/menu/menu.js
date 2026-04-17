@@ -7,10 +7,10 @@
             <h1 class="font-bold text-3xl">Brand</h1>
             <ul id="nav" class="flex flex-col w-full -z-30 md:bg-transparent text-center perspective-[1000px] transform translate-y-[-100%] md:flex-row md:top-0 md:translate-x-0 md:left-0 transition-all duration-300 justify-center absolute bottom-30px left-0 md:flex md:gap-4 md:translate-y-0 ">
 
-                <li class="bg-transparent py-4 md;py-0  md:w-fit md:static md:visible md:block origin-center border-cyan-400 border-t-[1px] md:border-0  absolute w-0  opacity-0 md:opacity-100 left-0 transform transition-all duration-300 invisible cursor-pointer">Home</li>
-                <li class="bg-transparent py-4 md;py-0 md:opacity-100 md:w-fit md:static md:visible md:block origin-center border-cyan-400 border-t-[1px] md:border-0  absolute w-0  opacity-0  left-0 transform transition-all duration-300 invisible cursor-pointer">Product</li>
-                <li class="bg-transparent py-4 md;py-0 md:opacity-100 md:w-fit md:static md:visible md:block origin-center border-cyan-400 border-t-[1px] md:border-0  absolute w-0  opacity-0  left-0 transform transition-all duration-300 invisible cursor-pointer">About</li>
-                <li class="bg-transparent py-4 md;py-0 md:opacity-100 md:w-fit md:static md:visible md:block origin-center border-cyan-400 border-t-[1px] border-b-[1px] md:border-0  absolute w-0  opacity-0  left-0 transform transition-all duration-300 invisible cursor-pointer">Contact</li>
+                <li class="bg-amber-800 md:bg-transparent py-4 md;py-0  md:w-fit md:static md:visible md:block origin-center border-cyan-400 border-t-[1px] md:border-0  absolute w-0  opacity-0 md:opacity-100 left-0 transform transition-all duration-300 invisible cursor-pointer">Home</li>
+                <li class="bg-amber-800 md:bg-transparent py-4 md;py-0 md:opacity-100 md:w-fit md:static md:visible md:block origin-center border-cyan-400 border-t-[1px] md:border-0  absolute w-0  opacity-0  left-0 transform transition-all duration-300 invisible cursor-pointer">Product</li>
+                <li class="bg-amber-800 md:bg-transparent py-4 md;py-0 md:opacity-100 md:w-fit md:static md:visible md:block origin-center border-cyan-400 border-t-[1px] md:border-0  absolute w-0  opacity-0  left-0 transform transition-all duration-300 invisible cursor-pointer">About</li>
+                <li class="bg-amber-800 md:bg-transparent py-4 md;py-0 md:opacity-100 md:w-fit md:static md:visible md:block origin-center border-cyan-400 border-t-[1px] border-b-[1px] md:border-0  absolute w-0  opacity-0  left-0 transform transition-all duration-300 invisible cursor-pointer">Contact</li>
             </ul>
             <div class="flex gap-4 z-50">
                 <a class="cursor-pointer border-[1px] bg-amber-400 text-black border-amber-400 py-1.5 px-4 rounded-md hover:bg-transparent hover:text-white transition-all duration-300" href="../../components/loginForm/loginForm.html">Sign In</a>

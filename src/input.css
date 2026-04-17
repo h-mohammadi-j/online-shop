@@ -223,3 +223,11 @@
     visibility: hidden;
   }
 }
+
+.sidebar-active {
+  @apply translate-x-0;
+}
+
+.main-blur {
+  @apply blur-sm pointer-events-none user-select-none;
+}
