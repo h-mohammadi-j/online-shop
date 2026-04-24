@@ -115,8 +115,8 @@ function createLeaves() {
 // Form submission
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
-  const username = this.querySelector('input[type="text"]').value;
-  const password = this.querySelector('input[type="password"]').value;
+  const username = this.querySelector('input[type="text"]').value.trim();
+  const password = this.querySelector('input[type="password"]').value.trim();
 
   const defaultUserName = "Hassan";
   const defaultPassword = "Hassan123";

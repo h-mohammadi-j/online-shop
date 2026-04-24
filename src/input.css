@@ -78,33 +78,26 @@
   div:nth-child(1) {
     animation-delay: -250ms;
   }
-   div:nth-child(2) {
-        animation-delay: 0ms;
-
+  div:nth-child(2) {
+    animation-delay: 0ms;
   }
-   div:nth-child(3) {
-        animation-delay: 250ms;
-
+  div:nth-child(3) {
+    animation-delay: 250ms;
   }
-   div:nth-child(4) {
-        animation-delay: 500ms;
-
+  div:nth-child(4) {
+    animation-delay: 500ms;
   }
-
 }
 
-
 @keyframes loading {
-  0%,100% {
+  0%,
+  100% {
     height: 0;
   }
   50% {
     height: 50px;
   }
 }
-
-
-
 
 .clip-path-style {
   clip-path: polygon(
@@ -124,16 +117,8 @@
 }
 
 .leaf {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  /* background: linear-gradient(45deg, #ff8c00, #ff4500, #8b4513); */
-  background-image: url("../assets/1.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50% 0 50% 50%;
-  opacity: 0.8;
-  animation: fall linear infinite;
+
+  @apply absolute w-[40px] h-[40px] bg-[url('../assets/1.png')] bg-cover bg-center rounded-[50%_0_50%_50%] opacity-80 animate-[fall_1s_linear_infinite];
 }
 
 /* Animations */
@@ -176,7 +161,7 @@
 @keyframes fall {
   0% {
     transform: translateY(-100px) rotate(0deg);
-    opacity: 0;
+    opacity: 0
   }
 
   10% {
@@ -195,26 +180,26 @@
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
     transform: translateY(20px);
+    opacity: 0;
   }
 
   to {
-    opacity: 1;
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
 .loading-hide {
-  display: none;
+  @apply hidden;
 }
 
 .products-hide {
-  display: none;
+  @apply hidden;
 }
 
 .loading-hide {
-  animation: opacity 1s ease-in-out forwards;
+  @apply animate-[opacity_1s_ease-in-out_forwards];
 }
 
 @keyframes opacity {
@@ -229,5 +214,26 @@
 }
 
 .main-blur {
-  @apply blur-sm pointer-events-none user-select-none;
+  @apply blur-sm pointer-events-none;
+}
+
+.li-content-hide {
+  @apply hidden;
+}
+
+.mini-sidebar {
+  @apply w-fit px-1.5 flex-col items-center;
+}
+
+.burgerBtn-rotate {
+  @apply rotate-180;
+}
+
+.drop {
+  @apply block;
+}
+
+
+.addProductForm-active {
+  @apply visible opacity-100 translate-y-0;
 }

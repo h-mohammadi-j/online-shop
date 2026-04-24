@@ -1,6 +1,6 @@
 const RegistrationForm = () => {
   return `
-    <div class="w-full h-screen flex items-center justify-center min-h-screen bg-linear-to-b from-amber-800 via-amber-600 via-amber-500 to-amber-200 overflow-hidden relative font-[Segoe UI,Tahoma,Geneva,Verdana,sans-serif]">
+    <div class="w-full h-scrren py-8 overflow-y-scroll flex items-center justify-center bg-linear-to-b from-amber-800 via-amber-600 via-amber-500 to-amber-200  bg-[100_100vh] bg-no-repeat bg-fixed relative font-[Segoe UI,Tahoma,Geneva,Verdana,sans-serif] overflow-x-hidden">
 
         <a class="fixed top-6 left-6 text-[rgba(255,255,255,0.5)] hover:text-white tranition-all duration-300 font-bold text-md cursor-pointer z-[100] " href="/">Back Home</a>
 
@@ -46,13 +46,13 @@ const RegistrationForm = () => {
 
             <!-- Login Form -->
 
-            <div class="relative w-full sm:w-[800px] p-[40px] bg-[rgba(255,255,255,0.15)] backdrop-blur-md rounded-[20px] shadow-[0_15px_35px_rgba(0,0,0,0.2)] border-[rgba(255,255,255,0.1)] border z-[10] animation-fadeIn  ">
+            <div class="relative w-full  sm:w-[800px] p-[40px] bg-[rgba(255,255,255,0.15)] backdrop-blur-md rounded-[20px] shadow-[0_15px_35px_rgba(0,0,0,0.2)] border-[rgba(255,255,255,0.1)] border z-[10] animation-fadeIn  ">
 
                 <h2 class="text-white text-3xl text-center mb-[30px] font-bold shadow-[0_2px_5px_rgba(0,0,0,0.2]">Registration</h2>
 
                 <form id="loginForm">
 
-                    <div class="w-full flex justify-center gap-4">
+                    <div class="w-full flex flex-col md:flex-row justify-center gap-4">
                         <div class="w-full relative mb-[30px]">
                             <input class="w-full px-4 py-4 bg-[rgba(255,255,255,0.1)] border-none outline-none rounded-full text-white tracking-[1px] shadow-[0_5px_15px_rgba(0,0,0,0.05) transition-all duration-300 placeholder:text-[rgba(255,255,255,0.7)] focus:bg-[rgba(255,255,255,0.2)] transform focus:translate-y-[-5px] " type="text" placeholder="First Name" required>
                             <i class="absolute right-[20px] top-[50%] transform translate-y-[-50%] text-white fas fa-user"></i>
@@ -69,7 +69,7 @@ const RegistrationForm = () => {
                     </div>
                     <div class="relative mb-[30px]">
                         <input class="w-full px-4 py-4 bg-[rgba(255,255,255,0.1)] border-none outline-none rounded-full text-white tracking-[1px] shadow-[0_5px_15px_rgba(0,0,0,0.05) transition-all duration-300 placeholder:text-[rgba(255,255,255,0.7)] focus:bg-[rgba(255,255,255,0.2)] transform focus:translate-y-[-5px] " type="text" placeholder="Email" required>
-                        <i class="absolute right-[20px] top-[50%] transform translate-y-[-50%] text-white fas fa-mail"></i>
+                        <i class="absolute right-[20px] top-[50%] transform translate-y-[-50%] text-white fas fa-envelope"></i>
                     </div>
                     <div class="relative mb-[30px]">
                         <input class="w-full px-4 py-4 bg-[rgba(255,255,255,0.1)] border-none outline-none rounded-full text-white tracking-[1px] shadow-[0_5px_15px_rgba(0,0,0,0.05) transition-all duration-300 placeholder:text-[rgba(255,255,255,0.7)] focus:bg-[rgba(255,255,255,0.2)] transform focus:translate-y-[-5px] " type="password" placeholder="Password" required>
@@ -89,6 +89,10 @@ const RegistrationForm = () => {
         </div>
     </div>    
     `;
+};
+
+window.onload = function () {
+  createLeaves();
 };
 
 document.getElementById("registrationFormRoot").innerHTML = RegistrationForm();
@@ -146,8 +150,6 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   }
 });
 
-window.onload = function () {
-  createLeaves();
-};
+
 
 export default loginForm;
