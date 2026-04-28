@@ -118,8 +118,8 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const username = this.querySelector('input[type="text"]').value.trim();
   const password = this.querySelector('input[type="password"]').value.trim();
 
-  const defaultUserName = "Hassan";
-  const defaultPassword = "Hassan123";
+  const defaultUserName = "123";
+  const defaultPassword = "123";
 
   // Simple validation
   if (username === defaultUserName && password === defaultPassword) {

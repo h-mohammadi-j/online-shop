@@ -11,317 +11,576 @@
     />
   </head>
   <body>
-
-
-        <div class="w-full h-screen flex items-center ">
-        
-      <aside id="dashSidebar" class="w-[300px] md:w-[250px]  h-screen z-[10] transform translate-x-[-100%] md:translate-x-0 transition-all duration-300 ease-in-out bg-linear-to-b from-amber-800 via-amber-700 via-amber-600 to-amber-400 flex flex-col items-center px-4 py-6 absolute  md:static  top-0 left-0 ">
-        <span id="sidebarBtn" class="bg-amber-800 py-2 px-4 text-white font-bold rounded-r-lg w-[70px] text-right absolute right-[-65px] top-[10px] z-[-1] cursor-pointer opacity-50 md:hidden hover:opacity-100 transition-all duration-300 md:pt-8 ">M ></span>
+    <div class="w-full flex items-center">
+      <!------------------------------ Sidebar Section ------------------------------>
+      <aside
+        id="dashSidebar"
+        class="w-[300px] md:w-[250px] h-screen z-[10] transform translate-x-[-100%] md:translate-x-0 transition-all duration-300 ease-in-out bg-linear-to-b from-amber-800 via-amber-700 via-amber-600 to-amber-400 flex flex-col items-center px-4 py-6 absolute md:static top-0 left-0"
+      >
+        <span
+          id="sidebarBtn"
+          class="bg-amber-800 py-2 px-4 text-white font-bold rounded-r-lg w-[70px] text-right absolute right-[-65px] top-[10px] z-[-1] cursor-pointer opacity-50 md:hidden hover:opacity-100 transition-all duration-300 md:pt-8"
+          >M ></span
+        >
 
         <!-- humburger -->
-        <span id="humburgerBtn" class="hidden md:block absolute top-[20px] right-[15px] cursor-pointer z-50 cursor-pointer md:inline text-white transform rotate-y-[180deg] ">
-            <i class="text-2xl fa-solid fa-arrow-right-from-bracket"></i>
-
+        <span
+          id="humburgerBtn"
+          class="hidden md:block absolute top-[20px] right-[15px] cursor-pointer z-50 cursor-pointer md:inline text-white transform rotate-y-[180deg]"
+        >
+          <i class="text-2xl fa-solid fa-arrow-right-from-bracket"></i>
         </span>
 
-        <h1 id="h1" class="text-2xl font-bold text-white flex items-center gap-4 border-b-2 border-amber-500 py-6 mt-10"><i class="text-white fas fa-dashboard"></i><span>Dashboard</span></h1>
-        <ul class="w-fit flex flex-col items-start justify-center gap-4 py-6  ">
-            <li class="w-fit grid place-items-center text-white text-xl "><a class="flex items-center justify-center gap-2" href="/"><i class="text-white p-2 grid place-content-center  fas fa-home"></i><span>Home</span></a></li>
-            <li class="w-fit grid place-items-center text-white text-xl "><a class="flex items-center justify-center gap-2" href="/"><i class="text-white p-2 grid place-content-center  fas fa-shirt"></i><span>Products</span></a></li>
-            <li class="w-fit grid place-items-center text-white text-xl "><a class="flex items-center justify-center gap-2" href="/"><i class="text-white p-2 grid place-content-center  fas fa-clipboard-list"></i><span>orders</span></a></li>
-            <li class="w-fit grid place-items-center text-white text-xl "><a class="flex items-center justify-center gap-2" href="/"><i class="text-white p-2 grid place-content-center  fas fa-gears"></i><span>settings</span></a></li>
+        <h1
+          id="h1"
+          class="text-2xl font-bold text-white flex items-center gap-4 border-b-2 border-amber-500 py-6 mt-10"
+        >
+          <i class="text-white fas fa-dashboard"></i><span>Dashboard</span>
+        </h1>
+        <ul class="w-fit flex flex-col items-start justify-center gap-4 py-6">
+          <li class="w-fit grid place-items-center text-white text-xl">
+            <a class="flex items-center justify-center gap-2" href="/"
+              ><i
+                class="text-white p-2 grid place-content-center fas fa-home"
+              ></i
+              ><span>Home</span></a
+            >
+          </li>
+          <li
+            id="productView"
+            class="w-fit grid place-items-center text-white text-xl"
+          >
+            <a class="flex items-center justify-center gap-2" href="/"
+              ><i
+                class="text-white p-2 grid place-content-center fas fa-shirt"
+              ></i
+              ><span>Products</span></a
+            >
+          </li>
+          <li class="w-fit grid place-items-center text-white text-xl">
+            <a class="flex items-center justify-center gap-2" href="/"
+              ><i
+                class="text-white p-2 grid place-content-center fas fa-clipboard-list"
+              ></i
+              ><span>orders</span></a
+            >
+          </li>
+          <li class="w-fit grid place-items-center text-white text-xl">
+            <a class="flex items-center justify-center gap-2" href="/"
+              ><i
+                class="text-white p-2 grid place-content-center fas fa-gears"
+              ></i
+              ><span>settings</span></a
+            >
+          </li>
         </ul>
       </aside>
 
-      <!-- Main Section -->
-      <main id="dashMain" class="w-full h-screen flex flex-col items-center gap-4 bg-gray-200 py-4 px-2 md:blur-none md:pointer-events-auto">
+      <!------------------------------------ Main Section ------------------------------------>
+      <main
+        id="dashMain"
+        class="w-full h-screen overflow-y-scroll flex flex-col items-center gap-4 bg-gray-200 py-4 px-2 md:blur-none md:pointer-events-auto scroll-m-0.5 scroll-smooth scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-amber-600"
+      >
+        <!--------------------------------- Main Header section --------------------------------->
+        <div
+          id="main"
+          class="w-full flex items-center justify-between border-b-2 border-amber-500 py-6"
+        >
+          <h2 id="sectionTitle" class="text-lg lg:text-3xl font-bold">
+            Products Management
+          </h2>
 
-        <div class="w-full flex items-center justify-between border-b-2 border-amber-500 py-6">
-
-            <h2 id="sectionTitle" class="text-lg lg:text-3xl font-bold ">Products Management</h2>
-            
-            <div class="flex items-center gap-4">
-                <div class="flex justify-center gap-4">
-                    <button id="addProduct" class="size-12 flex items-center justify-center  lg:size-auto py-1 px-1 md:py-2 md:px-6 bg-amber-700 rounded-full text-white  flex items-center gap-2 cursor-pointer transition-all duration-300 hover:bg-linear-to-br from-amber-800 via-amber-700 to-amber-500 "><span class="text-2xl">+</span> <span class="hidden lg:inline-block text-nowrap">Add Product</span></button>
-                </div>
-
-                <div class="flex flex-col items-center relative gap-1 size-12 lg:px-4 lg:w-full ">
-
-                    <div id="profile" class="flex items-center justify-center bg-amber-800 lg:py-2 lg:px-4 rounded-full size-12 md:w-full cursor-pointer hover:bg-linear-to-br from-amber-800 via-amber-700 to-amber-500 transition-all duration-300">
-                        <img class="w-full p-2 lg:h-10  rounded-full " src="../../assets/men-profile.png" alt="">
-
-                        <span class="text-white hidden lg:inline-block ml-1.5">Hassan</span>
-
-                        <!--<i id="angle-up" class="hidden lg:inline-block lg:ml-6 text-white fa-solid fa-angle-up"></i>-->
-                    </div>
-
-                    <div id="setting" class="hidden bg-gray-300 px-4 py-2 rounded-full  shadow-[0_0_5px_rgba(0,0,0,0.4)_inset] flex items-center justify-center gap-6 text-gray-500 w-12 h-12 lg:w-full cursor-pointer hover:bg-linear-to-br from-gray-300 via-gray-200 to-grY-100 transition-all duration-300">
-                        <i class="hidden lg:inline-block fa-solid fa-gear"></i>
-                        <span class="hidden lg:inline-block text-lg">Setting</span>
-                    </div>
-
-                    <div id="logOut" class="hidden bg-gray-300 px-4 py-2 rounded-full  shadow-[0_0_5px_rgba(0,0,0,0.4)_inset] flex items-center justify-center gap-6 text-gray-500 w-12 h-12 lg:w-full cursor-pointer hover:bg-linear-to-br from-gray-300 via-gray-200 to-grY-100 transition-all duration-300">
-                         <i class="hidden lg:inline-block fa-solid fa-arrow-right-from-bracket"></i>
-                        <span class="hidden lg:inline-block text-lg">Log Out</span>
-                    </div>
-                </div>
-
-
+          <div class="flex items-center gap-4">
+            <div class="flex justify-center gap-4">
+              <button
+                id="addProduct"
+                class="size-12 flex items-center justify-center lg:size-auto py-1 px-1 md:py-2 md:px-6 bg-amber-700 rounded-full text-white flex items-center gap-2 cursor-pointer transition-all duration-300 hover:bg-linear-to-br from-amber-800 via-amber-700 to-amber-500"
+              >
+                <span class="text-2xl">+</span>
+                <span class="hidden lg:inline-block text-nowrap"
+                  >Add Product</span
+                >
+              </button>
             </div>
-
-             <!--Add Product form-->
 
             <div
-              id="addProductForm"
-              class="invisible w-full h-screen backdrop-blur-sm grid place-items-center absolute top-0 left-0 z-[100] select-none transitaion-all duration-400 ease-in-out"
+              class="flex flex-col items-center relative gap-1 size-12 lg:px-4 lg:w-full"
             >
-              <form
-                class="bg-white shadow-[0_0_20px_rgba(0,0,0,0.5)] p-8 rounded-xl flex flex-col gap-2 items-center"
-                id="addForm"
-                method="post"
-                action="http://localhost:3000/products"
+              <div
+                id="profile"
+                class="flex items-center justify-center bg-amber-800 lg:py-2 lg:px-4 rounded-full size-12 md:w-full cursor-pointer hover:bg-linear-to-br from-amber-800 via-amber-700 to-amber-500 transition-all duration-300"
               >
-                <h1
-                  class="pb-8 text-blue-400 font-bold text-3xl border-b w-full text-center"
+                <img
+                  class="w-full p-2 lg:h-10 rounded-full"
+                  src="../../assets/men-profile.png"
+                  alt=""
+                />
+
+                <span class="text-white hidden lg:inline-block ml-1.5"
+                  >Hassan</span
                 >
-                  Add New Product
-                </h1>
+              </div>
 
-                <div class="mt-4 flex justify-center gap-8">
-                  <div class="w-full md:w-[400px] flex flex-col gap-2">
-                    <div class="flex felx-col gap-1.5">
-                      <label class="text-gray-500" for="category"
-                        >Category</label
-                      >
-                      <select
-                        class="w-full border border-gray-400 rounded-lg py-1"
-                        name="category"
-                        id="category"
-                        required
-                      >
-                        <option selected disabled>Select Category</option>
-                        <option value="furniture">Furniture</option>
-                        <option value="men">Men</option>
-                        <option value="women">Women</option>
-                        <option value="sport">Sport</option>
-                        <option value="accessories">Accessories</option>
-                        <option value="electronics">Electronics</option>
-                        <option value="bags">Bags</option>
-                        <option value="stationery">Stationery</option>
-                      </select>
-                    </div>
-                    <div class="flex flex-col gap-1.5">
-                      <label class="text-gray-500" for="title">Title</label>
-                      <input
-                        class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
-                        type="text"
-                        id="title"
-                        name="title"
-                        required
-                      />
-                    </div>
-                    <div class="flex flex-col gap-1">
-                      <label class="text-gray-500" for="description"
-                        >Description</label
-                      >
-                      <input
-                        class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
-                        type="text"
-                        id="description"
-                        name="description"
-                        required
-                      />
-                    </div>
-                    <div class="flex flex-col gap-1">
-                      <label class="text-gray-500" for="price">Price</label>
-                      <input
-                        class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
-                        type="number"
-                        id="price"
-                        name="price"
-                        required
-                      />
-                    </div>
-                    <div class="flex flex-col gap-1">
-                      <label
-                        class="text-gray-500"
-                        class="text-gray-500"
-                        for="rating"
-                        >Rating</label
-                      >
-                      <input
-                        class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
-                        type="text"
-                        id="rating"
-                        name="rating"
-                      />
-                    </div>
+              <div
+                id="setting"
+                class="hidden bg-gray-300 px-4 py-2 rounded-full shadow-[0_0_5px_rgba(0,0,0,0.4)_inset] flex items-center justify-center gap-6 text-gray-500 w-12 h-12 lg:w-full cursor-pointer hover:bg-linear-to-br from-gray-300 via-gray-200 to-grY-100 transition-all duration-300"
+              >
+                <i class="hidden lg:inline-block fa-solid fa-gear"></i>
+                <span class="hidden lg:inline-block text-lg">Setting</span>
+              </div>
+
+              <div
+                id="logOut"
+                class="hidden bg-gray-300 px-4 py-2 rounded-full shadow-[0_0_5px_rgba(0,0,0,0.4)_inset] flex items-center justify-center gap-6 text-gray-500 w-12 h-12 lg:w-full cursor-pointer hover:bg-linear-to-br from-gray-300 via-gray-200 to-grY-100 transition-all duration-300"
+              >
+                <i
+                  class="hidden lg:inline-block fa-solid fa-arrow-right-from-bracket"
+                ></i>
+                <span class="hidden lg:inline-block text-lg">Log Out</span>
+              </div>
+            </div>
+          </div>
+
+          <!--Add Product form-->
+
+          <div
+            id="addProductForm"
+            class="invisible w-full h-screen backdrop-blur-sm grid place-items-center absolute top-0 left-0 z-[100] select-none transitaion-all duration-400 ease-in-out"
+          >
+            <form
+              class="bg-white shadow-[0_0_20px_rgba(0,0,0,0.5)] p-8 rounded-xl flex flex-col gap-2 items-center"
+              id="addForm"
+            >
+              <h1
+                class="pb-8 text-blue-400 font-bold text-3xl border-b w-full text-center"
+              >
+                Add New Product
+              </h1>
+
+              <div class="mt-4 flex justify-center gap-8">
+                <div class="w-full md:w-[400px] flex flex-col gap-2">
+                  <div class="flex felx-col gap-1.5">
+                    <label class="text-gray-500" for="category">Category</label>
+                    <select
+                      class="w-full border border-gray-400 rounded-lg py-1"
+                      name="category"
+                      id="category"
+                      required
+                    >
+                      <option value="furniture">Furniture</option>
+                      <option value="men">Men</option>
+                      <option value="women">Women</option>
+                      <option value="sports">Sport</option>
+                      <option value="accessories">Accessories</option>
+                      <option value="electronics">Electronics</option>
+                      <option value="bags">Bags</option>
+                      <option value="stationery">Stationery</option>
+                    </select>
                   </div>
-
-                  <div class="w-full md:w-[400px] flex flex-col gap-2">
-                    <div class="flex flex-col gap-1">
-                      <label class="text-gray-500" for="stock">Stock</label>
-                      <input
-                        class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
-                        type="text"
-                        id="stock"
-                        name="stock"
-                      />
-                    </div>
-                    <div class="flex flex-col gap-1">
-                      <label class="text-gray-500" for="discount"
-                        >Discount</label
-                      >
-                      <input
-                        class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
-                        type="text"
-                        id="discount"
-                        name="discount"
-                      />
-                    </div>
-                    <div class="flex flex-col gap-1">
-                      <label class="text-gray-500" for="createdAt"
-                        >Created At</label
-                      >
-                      <input
-                        type="date"
-                        class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
-                        id="createdAt"
-                        name="createdAt"
-                        required
-                      />
-                    </div>
-
-                    <div class="flex flex-col gap-1">
-                      <label class="text-gray-500" for="addImage"
-                        >Add Product Image</label
-                      >
-                      <input
-                        class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
-                        type="file"
-                        id="addImage"
-                        name="addImage"
-                        required
-                      />
-                    </div>
-                    <div class="flex items-center justify-center gap-4">
-                      <button
-                        id="addBtn"
-                        class="bg-blue-500 py-2 px-4 rounded-lg block text-white cursor-pointer hover:bg-blue-600 transition-all duration-300 mt-2 w-fit"
-                        type="submit"
-                      >
-                        Add Product
-                      </button>
-                      <button
-                        class="bg-red-500 py-2 px-4 rounded-lg block text-white cursor-pointer hover:bg-red-600 transition-all duration-300 mt-2 w-fit"
-                        id="cancelBtn"
-                      >
-                        Cancel
-                      </button>
-                    </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="text-gray-500" for="title">Title</label>
+                    <input
+                      class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                      type="text"
+                      id="title"
+                      name="title"
+                      required
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label class="text-gray-500" for="description"
+                      >Description</label
+                    >
+                    <input
+                      class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                      type="text"
+                      id="description"
+                      name="description"
+                      required
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label class="text-gray-500" for="price">Price</label>
+                    <input
+                      class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                      type="number"
+                      id="price"
+                      name="price"
+                      required
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label
+                      class="text-gray-500"
+                      class="text-gray-500"
+                      for="rating"
+                      >Rating</label
+                    >
+                    <input
+                      class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                      type="text"
+                      id="rating"
+                      name="rating"
+                    />
                   </div>
                 </div>
-              </form>
-            </div>
 
+                <div class="w-full md:w-[400px] flex flex-col gap-2">
+                  <div class="flex flex-col gap-1">
+                    <label class="text-gray-500" for="quantity">Quantity</label>
+                    <input
+                      class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                      type="text"
+                      id="quantity"
+                      name="quantity"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label class="text-gray-500" for="stock">Stock</label>
+                    <input
+                      class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                      type="text"
+                      id="stock"
+                      name="stock"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label class="text-gray-500" for="discount">Discount</label>
+                    <input
+                      class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                      type="text"
+                      id="discount"
+                      name="discount"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label class="text-gray-500" for="createdAt"
+                      >Created At</label
+                    >
+                    <input
+                      type="date"
+                      class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                      id="createdAt"
+                      name="createdAt"
+                      required
+                    />
+                  </div>
 
-          
-        
+                  <!-- <div class="flex flex-col gap-1">
+                    <label class="text-gray-500" for="addImage"
+                      >Add Product Image</label
+                    >
+                    <input
+                      class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                      type="file"
+                      id="addImage"
+                      name="addImage"
+                      required
+                    />
+                  </div> -->
+                  <div class="flex items-center justify-center gap-4">
+                    <button
+                      id="addBtn"
+                      class="bg-blue-500 py-2 px-4 rounded-lg block text-white cursor-pointer hover:bg-blue-600 transition-all duration-300 mt-2 w-fit"
+                      type="submit"
+                    >
+                      Add Product
+                    </button>
+                    <button
+                      class="bg-red-500 py-2 px-4 rounded-lg block text-white cursor-pointer hover:bg-red-600 transition-all duration-300 mt-2 w-fit"
+                      id="cancelBtn"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
+
+        <!------------------------------- Products Staus section ------------------------------->
 
         <div class="w-full flex items-center justify-between gap-6 mb-6">
-            <div class="border rounded-sm border-amber-700 w-full p-4 flex flex-col items-center md:flex-row gap-2 ">
-                <img class="size-14 " src="../../assets/box.png" alt="">
-                <div class="flex flex-col items-center gap-2">
-                    <h2 class="text-md font-bold hidden lg:block  ">Total Products</h2>
-                    <h2 class="text-lg font-bold">15</h2>
-                </div>
+          <div
+            class="w-[150px] lg:w-[300px] border rounded-sm border-green-700  p-4 flex flex-col items-center md:flex-row gap-2"
+          >
+            <img class="size-14" src="../../assets/boxes-with-trolley-3d-asset-free-png.png" alt="" />
+            <div class="flex flex-col items-center gap-2">
+              <h2 class="text-md font-bold hidden lg:block">Total All Products</h2>
+              <h2 id="totalAllProducts" class="text-lg font-bold">0</h2>
             </div>
-            <div class="border rounded-sm border-amber-700 w-full p-4 flex flex-col items-center md:flex-row gap-2 ">
-                <img class="size-14 " src="../../assets/green-tick.png" alt="">
-                <div class="flex flex-col items-center gap-2">
-                    <h2 class="text-lg font-bold hidden lg:block  ">Active Products</h2>
-                    <h2 class="text-lg font-bold">120</h2>
-                </div>
+          </div>
+
+          <div class="w-full flex items-center justify-between gap-2">
+            <div
+              class="w-full border rounded-sm border-amber-700  p-4 flex flex-col items-center md:flex-row gap-2"
+            >
+              <img class="size-14" src="../../assets/box.png" alt="" />
+              <div class="flex flex-col items-center gap-2">
+                <h2 class="text-md font-bold hidden lg:block">
+                  Quantity of Product
+                </h2>
+                <h2 id="totalProducts" class="text-lg font-bold">0</h2>
+              </div>
             </div>
-            <div class="border rounded-sm border-amber-700 w-full p-4 flex flex-col items-center md:flex-row gap-2 ">
-                <img class="size-14 " src="../../assets/warning.png" alt="">
-                <div class="flex flex-col items-center gap-2">
-                    <h2 class="text-lg font-bold hidden lg:block  ">Out of Stock</h2>
-                    <h2 class="text-lg font-bold">150</h2>
-                </div>
+            <div
+              class="w-full border rounded-sm border-amber-700  p-4 flex flex-col items-center md:flex-row gap-2"
+            >
+              <img class="size-14" src="../../assets/green-tick.png" alt="" />
+              <div class="flex flex-col items-center gap-2">
+                <h2 class="text-lg font-bold hidden lg:block">
+                  Active Products
+                </h2>
+                <h2 id="activeProducts" class="text-lg font-bold">0</h2>
+              </div>
             </div>
+            <div
+              class="w-full border rounded-sm border-amber-700  p-4 flex flex-col items-center md:flex-row gap-2"
+            >
+              <img class="size-14" src="../../assets/warning.png" alt="" />
+              <div class="flex flex-col items-center gap-2">
+                <h2 class="text-lg font-bold hidden lg:block">Out of Stock</h2>
+                <h2 id="outOfStock" class="text-lg font-bold">0</h2>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="w-full flex items-center justify-center gap-6">
-            <div class="w-full lg:w-[400px] relative ">
-                <input class="w-full border border-amber-500 rounded-md py-2 ps-8  bg-white" type="search" placeholder="Search Products">
-                <i class="absolute top-[50%] left-[10px] transform translate-y-[-50%] text-gray-400 size-[40px] grid place-content-center  fas fa-magnifying-glass"></i>
-            </div>
-            <select name="" id="categoryDash" class="w-[200px] md:w-[300px] py-2 border border-amber-500 bg-white px-6 rounded-md ">
-                <option value="">Category: All</option>
-                <option value="">Category: All</option>
-                <option value="">Category: All</option>
-                <option value="">Category: All</option>
-                <option value="">Category: All</option>
-                <option value="">Category: All</option>
-            </select>
+        <!--------------------------- Filtering section --------------------------->
 
+        <div  class="w-full flex items-center justify-center gap-6">
+          <div class="w-full lg:w-[400px] relative">
+            <input
+              class="w-full border border-amber-500 rounded-md py-2 ps-8 bg-white"
+              type="search"
+              placeholder="Search Products"
+              id="SearchProduct"
+            />
+            <i
+              class="absolute top-[50%] left-[10px] transform translate-y-[-50%] text-gray-400 size-[40px] grid place-content-center fas fa-magnifying-glass"
+            ></i>
+          </div>
+          <select
+            name=""
+            id="categoryDash"
+            class="w-[200px] md:w-[300px] py-2 border border-amber-500 bg-white px-6 rounded-md"
+          >
+            <option value="all">All Category</option>
+            <option value="furniture">Furniture</option>
+            <option value="men">Men</option>
+            <option value="women">Women</option>
+            <option value="sports">Sport</option>
+            <option value="accessories">Accessories</option>
+            <option value="electronics">Electronics</option>
+            <option value="bags">Bags</option>
+            <option value="stationery">Stationery</option>
+          </select>
         </div>
         <div class="w-full flex justify-center">
-            <table class="w-full lg:w-4/5 border border-collapse border-amber-800 table-auto ">
-                <thead class="">
-                    <tr class="bg-amber-500 border border-amber-800 ">
-                        <th class="py-2">Product Name</th>
-                        <th class="py-2">Price</th>
-                        <th class="py-2">Stock</th>
-                        <th class="py-2">Status</th>
-                        <th class="py-2">Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="border border-amber-800">
-                        <td class="py-2.5 text-center font-bold">Iphone 13 promax</td>
-                        <td class="py-4 text-center font-bold">1100 $</td>
-                        <td class="py-2.5 text-center font-bold flex items-center justify-center "><span class="flex items-center gap-2 justify-center bg-red-600 w-fit py-1.5 px-2.5 min-w-[120px] rounded-full text-white shadow-[0_0_3px_rgba(0,0,0,0.5)_inset] hidden md:block">Out of Stock</span><span class="text-2xl md:hidden flex items-center gap-2 justify-center bg-red-600  py-1.5 px-2.5 size-10 rounded-full text-white shadow-[0_0_3px_rgba(0,0,0,0.5)_inset]">¡</span></td>
-                        <td class="py-2.5 text-center font-bold text-red-600">Inactive</td>
-                        <td class="py-2.5 text-center font-bold flex items-center justify-center gap-4">
-                            <button class="py-2.5 px-2.5 md:py-1.5 md:px-4 flex items-center justify-center gap-4 border border-amber-600 rounded-lg bg-gray-400 text-white cursor-pointer">
-                                <i class="fa-solid fa-pencil"></i>
-                                <span class="hidden md:block">Edit</span>
-                            </button>
-                            <button class="py-2.5 px-2.5 md:py-1.5 md:px-4 flex items-center justify-center gap-4 border border-amber-600 rounded-lg bg-red-400 text-white cursor-pointer">
-                                <i class="fa-regular fa-trash-can"></i>
-                                <span class="hidden md:block">Delete</span>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr class="border border-amber-800">
-                        <td class="py-2.5 text-center font-bold">Iphone 13 promax</td>
-                        <td class="py-4 text-center font-bold">1100 $</td>
-                        <td class="py-2.5 text-center font-bold flex items-center justify-center "><span class="flex items-center gap-2 justify-center bg-green-600 size-10 md:py-1.5 md:px-2 rounded-full text-white shadow-[0_0_3px_rgba(0,0,0,0.5)_inset] md:min-w-[120px]"><i class="fa-solid fa-check"></i> <span class="hidden md:inline-block">Stock</span></span></td>
-                        <td class="py-2.5 text-center font-bold text-green-600">Active</td>
-                        <td class="py-2.5 text-center font-bold flex items-center justify-center gap-4">
-                            <button class="py-2.5 px-2.5 md:py-1.5 md:px-4 flex items-center justify-center gap-4 border border-amber-600 rounded-lg bg-gray-400 text-white cursor-pointer">
-                                <i class="fa-solid fa-pencil"></i>
-                                <span class="hidden md:block">Edit</span>
-                            </button>
-                            <button class="py-2.5 px-2.5 md:py-1.5 md:px-4 flex items-center justify-center gap-4 border border-amber-600 rounded-lg bg-red-400 text-white cursor-pointer">
-                                <i class="fa-regular fa-trash-can"></i>
-                                <span class="hidden md:block">Delete</span>
-                            </button>
-                        </td>
-                    </tr>
-                    
-                    
-                </tbody>
-            </table>
+          <table
+            class="w-full xl:w-4/5 border border-collapse border-amber-800 table-auto"
+          >
+            <thead class="">
+              <tr class="bg-amber-500 border border-amber-800">
+                <th class="py-2">Product Name</th>
+                <th class="py-2">Price</th>
+                <th class="py-2">Quantity</th>
+                <th class="py-2">Stock</th>
+                <th class="py-2">Status</th>
+                <th class="py-2">Actions</th>
+              </tr>
+            </thead>
+
+            <tbody id="products-table"></tbody>
+          </table>
+        </div>
+
+        <!--------------------------- Alert Popup --------------------------->
+
+        <div
+          id="alertPopup"
+          class="hidden w-full h-screen absolute top-0 left-0 z-50 grid place-items-center backdrop-blur-2xl select-none"
+        >
+          <div
+            class="w-[400px] h-[250px] text-red-500 flex flex-col items-center justify-center gap-16 bg-white p-4 rounded-lg shadow-[0_0_10px_rgba(255,0,0,0.5)]"
+          >
+            <p class="font-bold text-xl">Are you sure?</p>
+
+            <div>
+              <button class="w-[120px] warningBtn text-white" id="deleteBtn">
+                Yes
+              </button>
+
+              <button
+                class="w-[120px] infoBtn text-white"
+                onclick="cancelDelete()"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!------------------------- Edit Form --------------------------->
+        <div
+          id="editProductForm"
+          class="hidden w-full h-screen backdrop-blur-sm grid place-items-center absolute top-0 left-0 z-[100] select-none transitaion-all duration-400 ease-in-out"
+        >
+          <form
+            class="bg-white shadow-[0_0_20px_rgba(0,0,0,0.5)] p-8 rounded-xl flex flex-col gap-2 items-center"
+            id="addForm"
+          >
+            <h1
+              class="pb-8 text-blue-400 font-bold text-3xl border-b w-full text-center"
+            >
+              Edit Product
+            </h1>
+
+            <div class="mt-4 flex justify-center gap-8">
+              <div class="w-full md:w-[400px] flex flex-col gap-2">
+                <div class="flex felx-col gap-1.5">
+                  <label class="text-gray-500" for="category">Category</label>
+                  <select
+                    class="w-full border border-gray-400 rounded-lg py-1"
+                    name="category"
+                    id="edit-category"
+                    required
+                  >
+                    <option value="furniture">Furniture</option>
+                    <option value="men">Men</option>
+                    <option value="women">Women</option>
+                    <option value="sports">Sport</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="bags">Bags</option>
+                    <option value="stationery">Stationery</option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <label class="text-gray-500" for="title">Title</label>
+                  <input
+                    class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                    type="text"
+                    id="edit-title"
+                    name="title"
+                    required
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-gray-500" for="description"
+                    >Description</label
+                  >
+                  <input
+                    class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                    type="text"
+                    id="edit-description"
+                    name="description"
+                    required
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-gray-500" for="price">Price</label>
+                  <input
+                    class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                    type="number"
+                    id="edit-price"
+                    name="price"
+                    required
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label
+                    class="text-gray-500"
+                    class="text-gray-500"
+                    for="rating"
+                    >Rating</label
+                  >
+                  <input
+                    class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                    type="text"
+                    id="edit-rating"
+                    name="rating"
+                  />
+                </div>
+              </div>
+
+              <div class="w-full md:w-[400px] flex flex-col gap-2">
+                <div class="flex flex-col gap-1">
+                  <label class="text-gray-500" for="quantity">Quantity</label>
+                  <input
+                    class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                    type="text"
+                    id="edit-quantity"
+                    name="quantity"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-gray-500" for="stock">Stock</label>
+                  <input
+                    class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                    type="text"
+                    id="edit-stock"
+                    name="stock"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-gray-500" for="discount">Discount</label>
+                  <input
+                    class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                    type="text"
+                    id="edit-discount"
+                    name="discount"
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <label class="text-gray-500" for="createdAt"
+                    >Created At</label
+                  >
+                  <input
+                    type="date"
+                    class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                    id="edit-createdAt"
+                    name="createdAt"
+                    required
+                  />
+                </div>
+
+                <!-- <div class="flex flex-col gap-1">
+                  <label class="text-gray-500" for="addImage"
+                    >Add Product Image</label
+                  >
+                  <input
+                    class="border border-gray-400 py-1.5 px-2 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+                    type="file"
+                    id="edit-image"
+                    name="addImage"
+                    required
+                  />
+                </div> -->
+                <div class="flex items-center justify-center gap-4">
+                  <button
+                    id="updateBtn"
+                    class="bg-blue-500 py-2 px-4 rounded-lg block text-white cursor-pointer hover:bg-blue-600 transition-all duration-300 mt-2 w-fit"
+                    type="submit"
+                  >
+                    Update
+                  </button>
+                  <button
+                    onclick="closeEditForm()"
+                    class="bg-red-500 py-2 px-4 rounded-lg block text-white cursor-pointer hover:bg-red-600 transition-all duration-300 mt-2 w-fit"
+                    id="edit-cancelBtn"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </main>
     </div>
 
-    
-
-    <script  src="./dashboard.js"></script>
+    <script src="./dashboard.js"></script>
   </body>
 </html>
